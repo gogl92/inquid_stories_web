@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inquid Stories</title>
+    <!-- 1. Add latest jQuery and fancyBox files -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <style>
+        #stories {
+            border: dashed;
+            background-color: cornsilk;
+        }
+
+        #stories .circular--portrait {
+            margin: 10px 0;
+            display: inline-block;
+        }
+
+        .circular--portrait {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+            border-radius: 100%;
+            border: solid 5px white;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .circular--portrait img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <noscript>
+
+    </noscript>
+</head>
+<body>
+<div id="stories">
+    <div class="circular--portrait">
+        <a data-fancybox="images" data-caption="Story #1" href="img/big_0.jpg">
+            <img src="img/small_0.png">
+        </a>
+    </div>
+    <div class="circular--portrait">
+        <a data-fancybox="images" data-caption="Story #2" href="img/big_1.jpg">
+            <img src="img/small_1.jpg">
+        </a>
+    </div>
+    <div class="circular--portrait">
+        <a data-fancybox="images" data-caption="Story #3" href="img/big_2.jpg">
+            <img src="img/small_2.jpg">
+        </a>
+    </div>
+</div>
+</body>
+</html>

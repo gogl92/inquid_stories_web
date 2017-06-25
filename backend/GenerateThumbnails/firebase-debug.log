@@ -1,0 +1,117 @@
+[debug] [2017-06-25T01:26:05.197Z] ----------------------------------------------------------------------
+[debug] [2017-06-25T01:26:05.199Z] Command:      /home/gogl92/.nvm/versions/node/v8.1.0/bin/node /home/gogl92/.nvm/versions/node/v8.1.0/bin/firebase init
+[debug] [2017-06-25T01:26:05.199Z] CLI Version:  3.9.1
+[debug] [2017-06-25T01:26:05.199Z] Platform:     linux
+[debug] [2017-06-25T01:26:05.199Z] Node Version: v8.1.0
+[debug] [2017-06-25T01:26:05.199Z] Time:         Sat Jun 24 2017 20:26:05 GMT-0500 (CDT)
+[debug] [2017-06-25T01:26:05.199Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-25T01:26:05.206Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-06-25T01:26:05.206Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /opt/lampp/htdocs/inquid_stories_web/backend/GenerateThumbnails
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[warn] ⚠  You have have not selected any features. Continuing will simply associate this folder with a Firebase project. Press Ctrl + C if you want to start over.
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-06-25T01:26:06.586Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Sat Jun 24 2017 20:26:06 GMT-0500 (CDT)
+[debug] [2017-06-25T01:26:07.350Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-25T01:30:03.179Z] ----------------------------------------------------------------------
+[debug] [2017-06-25T01:30:03.180Z] Command:      /home/gogl92/.nvm/versions/node/v8.1.0/bin/node /home/gogl92/.nvm/versions/node/v8.1.0/bin/firebase init
+[debug] [2017-06-25T01:30:03.181Z] CLI Version:  3.9.1
+[debug] [2017-06-25T01:30:03.181Z] Platform:     linux
+[debug] [2017-06-25T01:30:03.181Z] Node Version: v8.1.0
+[debug] [2017-06-25T01:30:03.181Z] Time:         Sat Jun 24 2017 20:30:03 GMT-0500 (CDT)
+[debug] [2017-06-25T01:30:03.181Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-25T01:30:03.188Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-06-25T01:30:03.188Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /opt/lampp/htdocs/inquid_stories_web/backend/GenerateThumbnails
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[warn] ⚠  You have have not selected any features. Continuing will simply associate this folder with a Firebase project. Press Ctrl + C if you want to start over.
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-06-25T01:30:04.206Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Sat Jun 24 2017 20:30:04 GMT-0500 (CDT)
+[debug] [2017-06-25T01:30:05.568Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-25T01:40:24.809Z] ----------------------------------------------------------------------
+[debug] [2017-06-25T01:40:24.811Z] Command:      /home/gogl92/.nvm/versions/node/v8.1.0/bin/node /home/gogl92/.nvm/versions/node/v8.1.0/bin/firebase init
+[debug] [2017-06-25T01:40:24.811Z] CLI Version:  3.9.1
+[debug] [2017-06-25T01:40:24.811Z] Platform:     linux
+[debug] [2017-06-25T01:40:24.811Z] Node Version: v8.1.0
+[debug] [2017-06-25T01:40:24.811Z] Time:         Sat Jun 24 2017 20:40:24 GMT-0500 (CDT)
+[debug] [2017-06-25T01:40:24.811Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-06-25T01:40:24.842Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-06-25T01:40:24.842Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /opt/lampp/htdocs/inquid_stories_web/backend/GenerateThumbnails
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing in an existing Firebase project directory
+
+[warn] ⚠  You have have not selected any features. Continuing will simply associate this folder with a Firebase project. Press Ctrl + C if you want to start over.
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2017-06-25T01:40:27.100Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Sat Jun 24 2017 20:40:27 GMT-0500 (CDT)
+[debug] [2017-06-25T01:40:28.608Z] <<< HTTP RESPONSE 200
+[debug] [2017-06-25T01:40:33.256Z] TypeError: Cannot read property 'setRawMode' of null
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-06-25T01:40:33.258Z] Error: write EIO
+[error] 
+[error] Error: An unexpected error has occurred.
