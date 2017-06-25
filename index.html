@@ -7,6 +7,54 @@
     <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.0.47/jquery.fancybox.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyCKU92XFT0VwZpDPd4MDMtIRDQFjMXZbiw",
+            authDomain: "inquid-stories.firebaseapp.com",
+            databaseURL: "https://inquid-stories.firebaseio.com",
+            projectId: "inquid-stories",
+            storageBucket: "inquid-stories.appspot.com",
+            messagingSenderId: "390036554924"
+        };
+        firebase.initializeApp(config);
+        var users = firebase.database().ref('/users/');
+        users.on('value', function (snapshot) {
+            var user = snapshot.val();
+            //console.log(user);
+            var stories = firebase.database().ref('/users/' + Object.keys(user)[0] + "/stories/");
+            stories.on('value', function (innerSnapshot) {
+                console.log(innerSnapshot.val());
+                for (var prop in innerSnapshot.val()) {
+                    var story = firebase.database().ref('/users/' + Object.keys(user)[0] + "/stories/" + prop);
+                    story.on('value', function (superInnerSnapshot) {
+                        console.log(superInnerSnapshot.val()['file_url']);
+                        var image = superInnerSnapshot.val()['file_url'];
+                        var thumbnail = superInnerSnapshot.val()['thumbnail_url'];
+                        $("#stories").append('<div class="circular--portrait"><a data-fancybox="images" data-caption="Story #" href="' + image + '"> <img src="' + thumbnail + '"></a></div>');
+                    });
+                }
+            });
+        });
+        /*users.on('child_added', function (snapshot) {
+            var user = snapshot.val();
+            //console.log(user);
+            var stories = firebase.database().ref('/users/' + Object.keys(user)[0] + "/stories/");
+            stories.on('value', function (innerSnapshot) {
+                console.log(innerSnapshot.val());
+                for (var prop in innerSnapshot.val()) {
+                    var story = firebase.database().ref('/users/' + Object.keys(user)[0] + "/stories/" + prop);
+                    story.on('value', function (superInnerSnapshot) {
+                        console.log(superInnerSnapshot.val()['file_url']);
+                        var image = superInnerSnapshot.val()['file_url'];
+                        var thumbnail = superInnerSnapshot.val()['thumbnail_url'];
+                        $("#stories").append('<div class="circular--portrait"><a data-fancybox="images" data-caption="Story #" href="' + image + '"> <img src="' + thumbnail + '"></a></div>');
+                    });
+                }
+            });
+        });*/
+    </script>
     <style>
         #stories {
             border: dashed;
@@ -43,7 +91,7 @@
 </head>
 <body>
 <div id="stories">
-    <div class="circular--portrait">
+    <!--<div class="circular--portrait">
         <a data-fancybox="images" data-caption="Story #1" href="img/big_0.jpg">
             <img src="img/small_0.png">
         </a>
@@ -57,7 +105,7 @@
         <a data-fancybox="images" data-caption="Story #3" href="img/big_2.jpg">
             <img src="img/small_2.jpg">
         </a>
-    </div>
+    </div>-->
 </div>
 </body>
 </html>
